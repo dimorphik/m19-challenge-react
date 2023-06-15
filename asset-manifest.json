@@ -1,16 +1,16 @@
 {
   "files": {
     "main.css": "/m19-challenge-react/static/css/main.b5f77c8a.css",
-    "main.js": "/m19-challenge-react/static/js/main.83043f0a.js",
+    "main.js": "/m19-challenge-react/static/js/main.688da931.js",
     "static/js/787.ecd3ef10.chunk.js": "/m19-challenge-react/static/js/787.ecd3ef10.chunk.js",
     "static/media/gulp-bean-bkgd.jpg": "/m19-challenge-react/static/media/gulp-bean-bkgd.3d4a7364cc1befd7f30c.jpg",
     "index.html": "/m19-challenge-react/index.html",
     "main.b5f77c8a.css.map": "/m19-challenge-react/static/css/main.b5f77c8a.css.map",
-    "main.83043f0a.js.map": "/m19-challenge-react/static/js/main.83043f0a.js.map",
+    "main.688da931.js.map": "/m19-challenge-react/static/js/main.688da931.js.map",
     "787.ecd3ef10.chunk.js.map": "/m19-challenge-react/static/js/787.ecd3ef10.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.b5f77c8a.css",
-    "static/js/main.83043f0a.js"
+    "static/js/main.688da931.js"
   ]
 }
