@@ -16,7 +16,10 @@ const ContactUs = (props) => {
         </p>
       </article>
       <picture>
-        <source srcset="./media/images/gulp-menu.jpg" media="(min-width: 768px)" />
+        <source
+          srcset={`${process.env.PUBLIC_URL}/media/images/gulp-menu.jpg`}
+          media="(min-width: 768px)"
+        />
         <img
           src="./media/images/gulp-menu-sm.jpg"
           alt="Our famous shop in San Francisco, where it all started."

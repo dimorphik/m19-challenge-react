@@ -11,7 +11,7 @@ const Products = (props) => {
       <div id="product-container">
         <picture>
           <img
-            src="./media/images/gulp-espresso.jpg"
+            src={`${process.env.PUBLIC_URL}/media/images/gulp-espresso.jpg`}
             alt="A cup of espresso. It's good for you! Really!"
           />
         </picture>
@@ -24,9 +24,12 @@ const Products = (props) => {
           </p>
         </article>
         <picture>
-          <source srcset="./media/images/gulp-coffee-beans.jpg" media="(min-width: 768px)" />
+          <source
+            srcset={`${process.env.PUBLIC_URL}/media/images/gulp-coffee-beans.jpg`}
+            media="(min-width: 768px)"
+          />
           <img
-            src="./media/images/gulp-coffee-beans-sm.jpg"
+            src={`${process.env.PUBLIC_URL}/media/images/gulp-coffee-beans-sm.jpg`}
             alt="Three beautiful piles of beautiful coffee beans, just lying there being beautiful"
           />
         </picture>
@@ -41,11 +44,11 @@ const Products = (props) => {
         </article>
         <picture>
           <source
-            srcset="./media/images/gulp-pouring-coffee-horizontal.jpg"
+            srcset={`${process.env.PUBLIC_URL}/media/images/gulp-pouring-coffee-horizontal.jpg`}
             media="(min-width: 768px)"
           />
           <img
-            src="media/images/gulp-pouring-coffee-horizontal-sm.jpg"
+            src={`${process.env.PUBLIC_URL}/media/images/gulp-pouring-coffee-horizontal-sm.jpg`}
             alt="A barista making one of our live-giving pourovers."
           />
         </picture>

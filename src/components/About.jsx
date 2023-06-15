@@ -31,15 +31,15 @@ const About = (props) => {
       <figure>
         <picture>
           <source
-            srcset="./media/images/gulp-pouring-coffee-horizontal.jpg"
+            srcset={`${process.env.PUBLIC_URL}/media/images/gulp-pouring-coffee-horizontal.jpg`}
             media="(min-width: 1266px)"
           />
           <source
-            srcset="./media/images/gulp-pouring-coffee-vertical.jpg"
+            srcset={`${process.env.PUBLIC_URL}/media/images/gulp-pouring-coffee-vertical.jpg`}
             media="(min-width: 768px) and (max-width: 1265px)"
           />
           <img
-            src="./media/images/gulp-pouring-coffee-horizontal-sm.jpg"
+            src={`${process.env.PUBLIC_URL}/media/images/gulp-pouring-coffee-horizontal-sm.jpg`}
             alt="Making pour-over coffee at our shop."
           />
         </picture>
