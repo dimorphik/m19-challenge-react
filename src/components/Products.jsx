@@ -2,7 +2,7 @@ import { useEffect } from "react";
 
 const Products = (props) => {
   useEffect(() => {
-    document.title = "Gulp Roast Coffee - Products";
+    document.title = "Gulp Roast Coffee : Products";
   }, []);
 
   return (
