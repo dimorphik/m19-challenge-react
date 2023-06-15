@@ -1,4 +1,10 @@
+import { useEffect } from "react";
+
 const Products = (props) => {
+  useEffect(() => {
+    document.title = "Gulp Roast Coffee - Products";
+  }, []);
+
   return (
     <section class="products">
       <h1>Our Products</h1>
