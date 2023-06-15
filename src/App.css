@@ -1,38 +1,577 @@
+@import url("https://fonts.googleapis.com/css2?family=Lato&family=Poppins:wght@700&display=swap");
+
 .App {
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #082b59;
+  margin: 0;
+  padding: 0;
+  font-family: "Lato", sans-serif;
+  font-size: 1.2rem;
+  line-height: 2;
+}
+
+h1,
+h2,
+h3 {
+  font-family: "Poppins", sans-serif;
+}
+
+h1 {
+  font-size: 2.5rem;
+  margin: 0;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+a {
+  color: #59331d;
+}
+
+a:hover {
+  text-decoration: none;
+}
+
+header {
+  border-bottom: 10px solid #d98555;
+}
+
+nav ul {
+  padding: 0;
+  margin: 0;
+  list-style-type: none;
+  display: flex;
+  flex-flow: column wrap;
+  justify-content: center;
+}
+
+nav li {
+  margin: 0 auto 2.35rem auto;
+  font-size: 1.4rem;
+}
+
+nav li span {
+  display: inline-block;
+}
+
+nav li .icon {
+  font-size: 1.6rem;
+  margin-right: 0.3rem;
+}
+
+nav .logo img {
+  max-width: 200px;
+}
+
+nav .logo {
+  flex-basis: 100%;
+  text-align: center;
+  margin-bottom: 0.5rem;
+}
+
+nav a {
+  color: white;
+  text-decoration: none;
+  display: block;
+}
+
+nav li:hover a {
+  color: #d98555;
+  & .caption {
+    text-decoration: underline;
+  }
+}
+
+main {
+  background-color: #fff;
+  background-image: url(../public/media/images/gulp-bean-bkgd.jpg);
+  background-repeat: repeat-x;
+  background-position-y: bottom;
+  padding-bottom: 270px;
+}
+
+section {
+  margin: 0 auto;
+  padding: 2rem;
+  display: flex;
+  flex-flow: column wrap;
+  justify-content: space-between;
+}
+
+.about figure {
+  margin: 2.5rem 0 0 0;
+  border-radius: 1rem;
+  overflow: hidden;
+  width: 100%;
+  max-width: 400px;
+  height: auto;
+  align-self: center;
+}
+
+.about article p {
+  margin: 0.8rem 0 2.3rem 0;
+}
+
+.about article p:last-of-type {
+  margin-bottom: 0.7rem;
+}
+
+.about figure img {
+  display: block;
+  width: 100%;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+}
+
+.about figcaption {
+  color: #f2f2f2;
+  background-color: #59331d;
+  text-align: center;
+  padding: 0.5rem;
+}
+
+.products {
+  padding-bottom: 0;
+}
+
+#product-container {
+  margin: 0;
+  padding: 0;
+}
+
+.products picture {
+  margin: 1.5rem 1rem 0 1rem;
+  padding: 0;
+}
+
+.products img {
+  width: 100%;
+  border-radius: 1rem;
+  max-width: 400px;
+}
+
+.products article {
+  margin: 0 1rem 2.2rem 1rem;
+}
+
+.products h2 {
+  font-size: 1.3rem;
+  margin-bottom: 0.5rem;
+}
+
+.products p {
+  margin: 0;
+  font-size: 1.25rem;
+}
+
+.contact p {
+  margin: 0;
+}
+
+.contact p:first-of-type {
+  margin-top: 1rem;
+}
+
+.contact picture {
+  margin: 2.7rem auto 0 auto;
+  border-radius: 1rem;
+  overflow: hidden;
+}
+
+.contact img {
+  display: block;
+  width: 100%;
+}
+
+.button {
+  display: inline-block;
+  background-color: #59331d;
+  border-radius: 10px;
+  padding: 0.5rem 1rem;
+  margin: 0;
+  color: #f2f2f2;
+  text-decoration: none;
+  border: 3px solid #59331d;
+}
+
+.button:hover {
+  background-color: #d98555;
+  color: #59331d;
+}
+
+footer {
+  color: #f2f2f2;
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+footer .copyright {
+  font-size: 1.2rem;
+  padding: 0 1.1rem;
+  margin: 0.4rem 0 1rem 0;
+  line-height: 2.4rem;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+footer p {
+  font-size: 1rem;
+  padding: 0 0.5rem;
+  line-height: 2.5rem;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+footer ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
   display: flex;
-  flex-direction: column;
-  align-items: center;
+  flex-flow: row wrap;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
 }
 
-.App-link {
-  color: #61dafb;
+footer a {
+  color: #f2f2f2;
+  font-size: 2rem;
+  display: block;
+  margin: 0 1rem 2.4rem 1rem;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+/* "medium" form factor: tablets */
+@media screen and (min-width: 768px) and (max-width: 1265px) {
+  nav ul {
+    flex-flow: row wrap;
   }
-  to {
-    transform: rotate(360deg);
+
+  nav .logo {
+    margin: 0 1rem;
+  }
+
+  nav li {
+    margin: 0 1rem 1rem 1rem;
+  }
+
+  main {
+    padding-bottom: 290px;
+  }
+
+  .about {
+    flex-flow: row wrap;
+    gap: 1.5rem;
+  }
+
+  .about article {
+    flex-basis: 0;
+    flex-grow: 1;
+  }
+
+  .about figure {
+    align-self: baseline;
+    margin-top: 5.3rem;
+    width: 100%;
+    max-width: 290px;
+  }
+
+  .products {
+    display: block;
+    margin: 0;
+  }
+
+  #product-container {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: flex-start;
+    margin: 0.5rem;
+    gap: 0;
+  }
+
+  #product-container h1 {
+    flex-basis: 100%;
+    margin-bottom: 1.5rem;
+  }
+
+  #product-container picture {
+    margin: 0;
+    padding: 0.5rem 0 2rem 1rem;
+    flex-basis: 41%;
+    align-self: flex-start;
+    flex-grow: 1;
+  }
+
+  #product-container img {
+    max-width: none;
+  }
+
+  #product-container article {
+    margin: 0;
+    flex-basis: 59%;
+    flex-grow: 1;
+    padding: 0 0 2rem 1.2rem;
+  }
+
+  #product-container article h2 {
+    margin: 0 0 1.2rem 0;
+  }
+
+  #product-container article p {
+    line-height: 2.6rem;
+    padding: 0 2.5rem 0 0;
+  }
+
+  .contact {
+    display: flex;
+    flex-flow: row wrap;
+  }
+
+  .contact > * {
+    flex-basis: 0;
+    flex-grow: 1;
+  }
+
+  .contact h1 {
+    margin-top: 3.5rem;
+  }
+
+  .contact picture {
+    margin-top: 0;
+  }
+
+  footer .copyright {
+    margin-bottom: 0;
+  }
+
+  footer p {
+    padding: 0 1rem;
+    margin-bottom: 0.5rem;
+  }
+}
+
+/* "large" form factor: small laptop screens & above */
+@media screen and (min-width: 1266px) {
+  h1 {
+    margin: 2.2rem 0 1.35rem 0;
+  }
+
+  nav ul {
+    box-sizing: border-box;
+    display: inline-flex;
+    flex-flow: row wrap;
+    justify-content: stretch;
+    margin: 0;
+    width: 100%;
+    padding: 0 2rem 0 1rem;
+  }
+
+  nav .logo {
+    flex-grow: 1;
+    flex-basis: 0;
+    text-align: left;
+    margin: 1rem 0 0 0;
+  }
+
+  nav .logo img:hover {
+    animation-name: spin;
+    animation-duration: 1s;
+    animation-timing-function: cubic-bezier(0.68, -0.55, 0.265, 1.55);
+  }
+
+  nav li {
+    align-self: center;
+    margin: 3rem 0 0 3rem;
+  }
+
+  nav li .icon {
+    margin-right: 0.5rem;
+    transition: transform 0.2s cubic-bezier(0.68, 0.21, 0.42, 2.46);
+  }
+
+  nav a {
+    transition: color 0.3s ease-out;
+  }
+
+  /* all hover transitions for nav elements in one selector! */
+  nav li:hover a {
+    color: #d98555;
+    & .icon {
+      transform: scale(1.5);
+    }
+    & .caption {
+      text-decoration: underline;
+    }
+  }
+
+  section {
+    max-width: 1500px;
+    animation-name: fadeIn;
+    animation-duration: 0.5s;
+    animation-timing-function: ease-out;
+  }
+
+  section.about {
+    max-width: 1500px;
+    padding: 2rem;
+    flex-flow: row wrap;
+    justify-content: center;
+    gap: 4rem;
+    margin: 0 auto;
+  }
+
+  .about article {
+    flex-basis: 47.5%;
+  }
+
+  .about article p:last-of-type {
+    margin-bottom: 1.1rem;
+  }
+
+  .about figure {
+    flex-basis: 45%;
+    align-self: baseline;
+    margin-top: 8.5rem;
+    max-width: 500px;
+  }
+
+  section.products {
+    display: block;
+    margin: 0 auto;
+    padding: 2rem;
+  }
+
+  .products h1 {
+    flex-basis: 100%;
+    font-size: 2.5rem;
+    margin: 1rem 0 0 0;
+  }
+
+  #product-container {
+    display: flex;
+    flex-flow: row wrap;
+    padding: 0 1rem;
+  }
+
+  #product-container picture,
+  #product-container article {
+    flex-basis: 33.3%;
+    margin: 0;
+    padding: 0 0.5rem;
+  }
+
+  #product-container picture {
+    padding-top: 1.3rem;
+    padding-bottom: 1rem;
+    align-self: flex-start;
+  }
+
+  #product-container img {
+    max-width: none;
+  }
+
+  #product-container article {
+    padding-top: 0;
+    padding-bottom: 1rem;
+  }
+
+  #product-container article h2 {
+    font-size: 1.7rem;
+    line-height: 2.5rem;
+    margin-bottom: 1.2rem;
+  }
+
+  #product-container article p {
+    font-size: 1.2rem;
+  }
+
+  .contact {
+    max-width: 1200px;
+    display: grid;
+    grid-template-rows: 1fr;
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .contact h1 {
+    margin-top: 7.5rem;
+  }
+
+  .contact picture {
+    margin-top: 0;
+  }
+
+  .contact img {
+    max-width: 500px;
+  }
+
+  .contact a,
+  .contact a:visited {
+    color: #59331d;
+  }
+
+  .contact a:hover,
+  .contact a:active {
+    text-decoration: underline;
+    color: #d98555;
+  }
+
+  .button {
+    transition: all 0.2s ease-in-out;
+  }
+
+  footer a {
+    text-decoration: none;
+    margin-bottom: 1rem;
+  }
+
+  footer li .icon {
+    transition: all 0.2s cubic-bezier(0.68, 0.21, 0.42, 2.46);
+  }
+
+  footer li .lg-only {
+    display: block;
+    visibility: visible;
+    font-size: 0.9rem;
+    opacity: 0;
+    position: static;
+    width: auto;
+    height: auto;
+    margin: 0;
+    padding: 0;
+    clip: auto;
+    transition: all 0.2s cubic-bezier(0.68, 0.21, 0.42, 2.46);
+  }
+
+  footer li:hover {
+    & .icon {
+      transform: scale(1.5);
+      box-shadow: 0 0 60px 5px #131d26;
+    }
+
+    & .lg-only {
+      opacity: 1;
+    }
+  }
+
+  /* this animation causes the "Gulp Roast" logo to spin on hover. Only used in the "large" form factor. */
+  @keyframes spin {
+    0% {
+      transform: rotate(0deg);
+    }
+    100% {
+      transform: rotate(360deg);
+    }
+  }
+
+  /* this animation causes text to fade in when a page loads. Only used in the "large" form factor. */
+  @keyframes fadeIn {
+    0% {
+      opacity: 0;
+    }
+    100% {
+      opacity: 1;
+    }
   }
 }
