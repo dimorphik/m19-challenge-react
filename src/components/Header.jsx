@@ -8,9 +8,9 @@ const Header = (props) => {
       <nav>
         <ul>
           <Logo />
-          <NavItem linkTo="about" icon={faCoffee} caption="About" />
-          <NavItem linkTo="products" icon={faFireFlameCurved} caption="Products" />
-          <NavItem linkTo="" icon={faPhone} caption="Contact" />
+          <NavItem linkTo="/about" icon={faCoffee} caption="About" />
+          <NavItem linkTo="/products" icon={faFireFlameCurved} caption="Products" />
+          <NavItem linkTo="/" icon={faPhone} caption="Contact" />
         </ul>
       </nav>
     </header>
